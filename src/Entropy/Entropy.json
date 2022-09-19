@@ -1,0 +1,79 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Button1": 15,
+    "Container1": 4,
+    "Container2": 5,
+    "Container3": 10,
+    "Gallery2": 11,
+    "galleryTemplate2": 12,
+    "Label2": 6,
+    "Label3": 7,
+    "PrimaryColor": 8,
+    "Screen1": 3,
+    "Screen2": 14,
+    "SecondaryColor": 9,
+    "Title2": 13
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "09/19/2022 11:19:29",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {},
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 0,
+    "gblSlates": 1
+  },
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 4,
+    "circle": 2,
+    "gallery": 3,
+    "groupContainer": 0,
+    "label": 1
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Button1": 10,
+    "Container1": 0,
+    "Container2": 1,
+    "Container3": 6,
+    "Gallery2": 7,
+    "galleryTemplate2": 8,
+    "Label2": 2,
+    "Label3": 3,
+    "PrimaryColor": 4,
+    "Screen1": 0,
+    "Screen2": 0,
+    "SecondaryColor": 5,
+    "Title2": 9
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.2474109,
+    "ControlCount": {
+      "circle": 2,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "groupContainer": 3,
+      "label": 3,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 2.1125495,
+    "ErrorCount": 0
+  },
+  "WasLocalDatabaseReferencesEmpty": true
+}

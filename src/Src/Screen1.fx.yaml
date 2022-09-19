@@ -1,0 +1,108 @@
+Screen1 As screen:
+    OnVisible: |+
+        =Clear(gblSlates);
+        Collect(gblSlates,{id: 20, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 19, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 18, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 17, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 16, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 15, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 14, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 13, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 12, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 11, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 10, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 9, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 8, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 7, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 6, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 5, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 4, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 3, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 2, Color: PrimaryColor.Fill});
+        Collect(gblSlates,{id: 1, Color: PrimaryColor.Fill});
+        
+
+    Container1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container2 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =60
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =10
+            PaddingRight: =10
+            Width: =40
+            ZIndex: =1
+
+            Label2 As label:
+                Text: ="Primary Color"
+                ZIndex: =1
+
+            PrimaryColor As circle:
+                BorderThickness: =1
+                Fill: =RGBA(255, 253, 208, 1)
+                Height: =35
+                Width: =35
+                ZIndex: =2
+
+            Label3 As label:
+                Text: ="Secondary Color"
+                Width: =170
+                ZIndex: =3
+
+            SecondaryColor As circle:
+                BorderThickness: =1
+                Fill: =RGBA(214, 223, 238, 1)
+                Height: =35
+                Width: =35
+                ZIndex: =4
+
+        Container3 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =7
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =10
+            PaddingRight: =10
+            ZIndex: =2
+
+            "Gallery2 As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+                Items: =gblSlates
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =30
+                LayoutMinWidth: =320
+                ShowNavigation: =true
+                TemplatePadding: =2
+                TemplateSize: =25
+                ZIndex: =1
+
+                Title2 As label:
+                    Fill: =ThisItem.Color
+                    Font: =Font.'Lato Light'
+                    FontWeight: =FontWeight.Lighter
+                    Height: =Self.Size * 1.5
+                    OnSelect: |+
+                        =Set(A, LookUp(gblSlates,id = Value(Title2.Text)));
+                        If(A.Color = PrimaryColor.Fill, Patch(gblSlates,A,{ Color: SecondaryColor.Fill }),Patch(gblSlates,A,{ Color: PrimaryColor.Fill }));
+                        
+                        
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.id
+                    Tooltip: ="Click to toggle the color i.e change primary color to secondary"
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth 
+                    Y: =
+                    ZIndex: =2
+
