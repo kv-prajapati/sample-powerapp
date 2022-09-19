@@ -1,14 +1,32 @@
 Screen2 As screen:
 
     Button1 As button:
-        Text: ="Button"
-        X: =40
-        Y: =40
+        OnSelect: |-
+            =ForAll(Table(ParseJSON(TextInput1.Text)),{Item: Value})
+        Text: ="ParseJSON"
+        X: =57
+        Y: =542
         ZIndex: =1
 
     Button2 As button:
         Text: ="Button"
-        X: =40
-        Y: =148
+        X: =57
+        Y: =618
         ZIndex: =2
+
+    TextInput1 As text:
+        Default: =""
+        Height: =448
+        Mode: =TextMode.MultiLine
+        Width: =766
+        X: =22
+        Y: =60
+        ZIndex: =3
+
+    ListBox1 As listbox:
+        Items: |-
+            =ForAll(Table(ParseJSON(TextInput1.Text)),{Item: Value})
+        X: =818
+        Y: =60
+        ZIndex: =4
 

@@ -12,15 +12,17 @@
     "galleryTemplate2": 12,
     "Label2": 6,
     "Label3": 7,
+    "ListBox1": 19,
     "PrimaryColor": 8,
     "Screen1": 3,
     "Screen2": 14,
     "SecondaryColor": 9,
+    "TextInput1": 17,
     "Title2": 13
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/19/2022 11:22:28",
+  "HeaderLastSavedDateTimeUTC": "09/19/2022 12:23:59",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -30,22 +32,25 @@
   "OrderComponentTemplate": {},
   "OrderDataSource": {
     "CustomGallerySample": 0,
-    "gblSlates": 1
+    "gblSlates": 2,
+    "ListboxSample": 1
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 4,
+    "button": 6,
     "circle": 2,
     "gallery": 3,
     "groupContainer": 0,
-    "label": 1
+    "label": 1,
+    "listbox": 5,
+    "text": 4
   },
   "PublishOrderIndices": {
     "App": 0,
-    "Button1": 10,
-    "Button2": 11,
+    "Button1": 12,
+    "Button2": 13,
     "Container1": 0,
     "Container2": 1,
     "Container3": 6,
@@ -53,10 +58,12 @@
     "galleryTemplate2": 8,
     "Label2": 2,
     "Label3": 3,
+    "ListBox1": 11,
     "PrimaryColor": 4,
     "Screen1": 0,
     "Screen2": 0,
     "SecondaryColor": 5,
+    "TextInput1": 10,
     "Title2": 9
   },
   "ResourcesJsonIndices": {
