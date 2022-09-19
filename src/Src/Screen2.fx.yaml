@@ -62,8 +62,11 @@ Screen2 As screen:
             ZIndex: =3
 
     Button3 As button:
-        OnSelect: |
+        OnSelect: |-
             =Set(jsonText , TextInput1.Text );
+            /*
+            [{"Name": "Rajesh","No": 10,"Birth Date": "10/31/2002"},{"Name": "Manoj","No": 30,"Birth Date": "05/10/2001"}]
+            */
         Text: ="Set JSON Text"
         X: =9
         Y: =226
